@@ -1,0 +1,141 @@
+<title>조치원 1층 업종 분석</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+/* Layout: single-column report, summary first, tables scroll inside own boxes */
+:root{--bg:#f6f7f5;--fg:#1d2420;--mut:#5d675f;--line:#d9ded8;--card:#ffffff;--acc:#1f6f5b;--warn:#b4690e;--bad:#b3392f;--ok:#1f7a4d;
+--display:"Space Grotesk","Pretendard",system-ui,sans-serif;--body:"Inter","Pretendard","Malgun Gothic",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121715;--fg:#e6ebe7;--mut:#9aa69d;--line:#2b3430;--card:#1a211e;--acc:#5cc2a3;--warn:#e0a24a;--bad:#ef7d72;--ok:#6fd09c;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121715;--fg:#e6ebe7;--mut:#9aa69d;--line:#2b3430;--card:#1a211e;--acc:#5cc2a3;--warn:#e0a24a;--bad:#ef7d72;--ok:#6fd09c;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.65;padding-block:32px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+main{max-width:860px;margin:0 auto;display:flex;flex-direction:column;gap:32px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;line-height:1.25;margin:0}
+h1{font-size:28px}h2{font-size:20px;margin-bottom:10px}h3{font-size:16px}
+p{margin:0 0 10px}.mut{color:var(--mut);font-size:13px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:16px}
+.rec{border-left:4px solid var(--acc)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.grid>*{min-width:0}
+.big{font-family:var(--display);font-size:26px;font-weight:600;font-variant-numeric:tabular-nums}
+.sc{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:620px;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top;font-size:14px}
+th{font-size:12px;letter-spacing:.04em;color:var(--mut);font-weight:600}
+.pill{display:inline-block;padding:1px 8px;border-radius:10px;font-size:12px;border:1px solid currentColor}
+.ok{color:var(--ok)}.warn{color:var(--warn)}.bad{color:var(--bad)}
+ul{margin:0;padding-left:20px}li{margin-bottom:4px}
+a{color:var(--acc)}
+code{font-size:12px;word-break:break-all}
+</style>
+<main>
+<header>
+<p class="mut">세종시 조치원읍 새내12길 14 · 상가 3층 건물 · 2026-11-14 기준 · 웹 공개자료 조사</p>
+<h1>조치원 새내12길 1층, 어떤 업종을 들일까</h1>
+</header>
+
+<section class="box rec">
+<h2>결론</h2>
+<p>소상공인 상가정보로 반경 300m 점포 790곳을 집계해 순위를 고쳤습니다. 새내12길은 한식·주점·노래방이 모인 <b>먹자·유흥 골목</b>이라, 이미 포화된 외식·주점·카페·약국은 피하는 쪽이 맞습니다.</p>
+<p><b>1순위: 의원 계열</b>(내과·소아과·치과·정형 등). 반경 300m에 의원이 6곳뿐이고 내과/소아과 1곳, 치과 1곳으로 공백입니다. 임차 기간이 길고, 3층 건물이라 상층에 다른 진료과를 묶을 수 있습니다. 약국은 이미 19곳이라 따로 들일 이유가 없습니다.</p>
+<p><b>2순위: 생활서비스</b>(코인·무인 세탁, 반찬·간편식). 세탁소가 4곳이고 1인가구가 50.6%라 여지가 있습니다. 편의점(9곳)은 포화에 가깝습니다.</p>
+<p><b>3순위: 운동시설</b>(헬스·필라테스). 헬스 3곳, 필라테스 1곳으로 공백이지만 1층보다 위층에 어울립니다.</p>
+<p><b>피할 업종:</b> 카페(37곳), 한식(98곳), 주점(55곳), 치킨(9곳), 분식(19곳), 노래방, 약국(19곳).</p>
+<p class="mut">순위는 점포 수 집계와 인구 자료를 바탕으로 한 제 판단입니다. 매출·유동인구·폐업률은 없어, 현장 확인 전에는 확정할 수 없습니다.</p>
+</section>
+
+<section>
+<h2>핵심 수치</h2>
+<div class="grid">
+<div class="box"><div class="big">40,917명</div><div class="mut">조치원읍 인구(2026.10). 2022년 42,511명에서 감소 후 2025년부터 보합</div></div>
+<div class="box"><div class="big">50.6%</div><div class="mut">1인가구 비율(10,721세대/21,198세대)</div></div>
+<div class="box"><div class="big">22.5%</div><div class="mut">65세 이상 비율. 평균연령 45.7세</div></div>
+<div class="box"><div class="big">22.8%</div><div class="mut">세종 일반상가 공실률(2026 2분기), 전국 1위. 전국 평균 13.4%</div></div>
+</div>
+<p class="mut" style="margin-top:8px">출처: <a href="https://k-calc.com/region/Sejong/Jochiwon-eup">k-calc 조치원읍</a>(주민등록 기반 집계), <a href="https://mobile.newsis.com/view/NISX20260729_0003728100">뉴시스, 한국부동산원 임대동향</a></p>
+</section>
+
+<section>
+<h2>업종 후보 비교</h2>
+<div class="sc"><table>
+<thead><tr><th>업종</th><th>반경 300m 점포 수</th><th>반경 500m</th><th>판단</th></tr></thead>
+<tbody>
+<tr><td>의원(내과·소아과·치과 등)</td><td>6 (내과/소아과 1, 치과 1)</td><td>7</td><td><span class="pill ok">추천</span> 공백</td></tr>
+<tr><td>세탁소</td><td>4</td><td>13</td><td><span class="pill ok">추천</span> 코인·무인 형태</td></tr>
+<tr><td>헬스·필라테스</td><td>헬스 3, 필라테스 1</td><td>6 / 2</td><td><span class="pill warn">위층 적합</span></td></tr>
+<tr><td>학원</td><td>8</td><td>13</td><td><span class="pill warn">중간</span></td></tr>
+<tr><td>편의점</td><td>9</td><td>16</td><td><span class="pill warn">포화 근접</span></td></tr>
+<tr><td>반찬가게</td><td>10</td><td>13</td><td><span class="pill warn">중간</span></td></tr>
+<tr><td>카페</td><td>37</td><td>50</td><td><span class="pill bad">포화</span></td></tr>
+<tr><td>약국</td><td>19</td><td>26</td><td><span class="pill bad">포화</span></td></tr>
+<tr><td>한식 / 주점 / 분식</td><td>98 / 55 / 19</td><td>144 / 61 / 25</td><td><span class="pill bad">포화</span> 먹자골목</td></tr>
+</tbody></table></div>
+<p class="mut" style="margin-top:8px">출처: 소상공인시장진흥공단 상가정보 API(데이터 기준 2026년 9월), 새내12길 14 좌표 기준 반경 집계(300m 총 790곳, 500m 총 1,154곳). 폐업 후 미정리된 점포가 섞였을 수 있습니다. 수요 등급은 인구 자료에 근거한 판단입니다.</p>
+</section>
+
+<section>
+<h2>상권 맥락</h2>
+<ul>
+<li><b>수요층:</b> 고려대·홍익대 세종캠퍼스 통학생과 원도심 거주자. 재학생 수와 산단 종사자 수는 확인하지 못했습니다.</li>
+<li><b>호재:</b> 2026년 7월 조치원역 1층에 '조치원ㄱ' 개소, 복숭아축제와 역세권 연계, 신임 시장의 역세권 개발 공약, 2027~2031년 중앙기관 44곳 세종 이전 예정. 모두 조치원에 미치는 효과는 불확실합니다.</li>
+<li><b>악재:</b> 신도심으로 청년 유출, 세종 전체 상가 공실 전국 1위, 2025년 2월 기사 기준 조치원 중대형 상가 공실률 25.0%.</li>
+</ul>
+</section>
+
+<section>
+<h2>임대 시세 참고</h2>
+<div class="sc"><table>
+<thead><tr><th>보증금/월세(만원)</th><th>면적</th><th>평당 월세</th></tr></thead>
+<tbody>
+<tr><td>2,000 / 100</td><td>126㎡(38평)</td><td>약 2.6만원</td></tr>
+<tr><td>2,000 / 140</td><td>132㎡(40평)</td><td>약 3.5만원</td></tr>
+<tr><td>2,000 / 80</td><td>47㎡(14평)</td><td>약 5.6만원</td></tr>
+</tbody></table></div>
+<p class="mut" style="margin-top:8px">당근부동산 호가 3건이며 실거래가가 아닙니다. 표본이 적어 대표성이 낮습니다. 공실률이 높아 임차인 우위 시장일 가능성이 큽니다(추정). 소형 평수일수록 평당 단가가 높아 소형 업종이 월세를 더 받을 여지가 있습니다.</p>
+</section>
+
+<section>
+<h2>공공데이터 연결 상태</h2>
+<ul>
+<li>요청하신 서울 열린데이터는 서울시 한정이라 세종 조치원에는 쓸 수 없었습니다.</li>
+<li>대신 <b>소상공인시장진흥공단 상가(상권)정보 API</b>(<a href="https://www.data.go.kr/data/15012005/openapi.do">data.go.kr 15012005</a>)를 연결해 반경 점포 데이터를 가져왔습니다. 위 점포 수 표가 그 결과입니다.</li>
+<li>이 API에는 매출, 유동인구, 폐업 정보가 없습니다.</li>
+<li>새내12길 14 번지에는 우체국떡볶이, 디쁘리, 어순이와돈돌이가 등록돼 있고 2층에 단란주점이 있습니다. 현재 영업 중인지는 건물주께서 가장 잘 아시므로 대조해 주세요.</li>
+<li>세종시 자체 공공데이터와 sg.sbiz.or.kr 상권분석은 조사하지 못했습니다.</li>
+</ul>
+</section>
+
+<section>
+<h2>검토 고려사항: 해당 건물에 등록된 사업자</h2>
+<p>새내12길 14(지번 원리 15-4)의 현재 테넌트입니다. 층 정보는 건물주께서 알려주신 내용으로 보정했습니다. 상가정보 API(2026년 9월)에는 3곳의 층이 비어 있었습니다.</p>
+<div class="sc"><table>
+<thead><tr><th>층</th><th>상호</th><th>업종</th></tr></thead>
+<tbody>
+<tr><td>1층</td><td>우체국떡볶이</td><td>분식</td></tr>
+<tr><td>1층</td><td>어순이와돈돌이</td><td>횟집 (API에는 돼지고기 구이/찜으로 등록)</td></tr>
+<tr><td>2층</td><td>디쁘리</td><td>맥주·과일 주점 (API에는 백반/한정식으로 등록)</td></tr>
+<tr><td>2층</td><td>백마강단란주점</td><td>일반 유흥 주점</td></tr>
+<tr><td>3층</td><td colspan="2">등록된 사업자 없음</td></tr>
+</tbody></table></div>
+<ul style="margin-top:8px">
+<li><b>임대할 공간은 1층 약 35평</b>이며, 예전에 오락실이 있던 자리입니다. 우체국떡볶이와 어순이와돈돌이는 계속 영업하는 이웃 테넌트로 봅니다.</li>
+<li>평수가 큰 편이라 한 업체에 통으로 주거나 17~18평씩 둘로 나눠 임대하는 방법이 있습니다. 분할하면 평당 월세를 높게 받을 수 있지만 출입구·전기·설비 공사가 듭니다.</li>
+<li>오락실 자리라 창이 적고 내부가 구획돼 있을 가능성이 있습니다. 의원은 채광과 출입 동선이, 코인세탁은 급배수·배기가 중요하므로 현재 설비 상태를 먼저 확인하세요.</li>
+<li>건물 안에 분식, 횟집, 주점 2곳이 이미 있어 외식·주류 업종을 더하면 같은 건물 안에서 손님을 나눕니다. 외식은 피하는 쪽이 맞습니다.</li>
+<li>2층의 주점 2곳(디쁘리, 백마강단란주점)이 야간 출입과 소음을 만듭니다. 이 소음은 낮 환자가 중심인 의원에 부담일 수 있습니다. 1층 출입구를 분리하거나 영업시간 차이를 임차인에게 미리 설명하는 편이 좋습니다.</li>
+<li>35평은 소아과·내과 등 단일 진료과 의원, 코인세탁(보통 20~35평)에는 알맞고, 헬스·필라테스는 다소 작은 편입니다. 편의점이나 반찬가게에는 조금 큽니다.</li>
+<li>임대료 감: 앞서 본 큰 평수 호가(평당 월세 2.6~3.5만 원)를 35평에 적용하면 월 약 90만~120만 원입니다. 호가 3건 기준 거친 추정이며, 대로변이 아닌 골목이라 실제와 다를 수 있습니다.</li>
+<li>3층 공실 활용: 위층에 의원 보조 공간이나 운동시설을 두는 구성도 가능합니다.</li>
+<li>어순이와돈돌이(횟집)와 디쁘리(주점) 두 곳의 업종이 실제와 다르게 등록돼 있어, 상가정보 등록 내용이 현황과 어긋날 수 있습니다.</li>
+</ul>
+</section>
+
+<section>
+<h2>확인되지 않은 것과 다음 단계</h2>
+<ul>
+<li>유동인구, 업종별 매출과 폐업률: 미확인. 평일·주말 낮과 밤의 현장 관찰이 필요합니다.</li>
+<li>골목의 밤 중심 성격이 낮 시간 의원 수요와 맞는지 확인하세요. 의원 환자는 낮 유입이 중요합니다.</li>
+<li>해당 주소가 역세권, 대학 통학로, 시장 중 어느 생활권인지: 현장 유동인구(평일·주말, 점심·저녁) 확인.</li>
+<li>조치원읍 임대료 통계와 매매시세: 한국부동산원 R-ONE과 국토부 실거래가로 확인.</li>
+<li>진료과별 공백(내과·소아과·정형·이비인후과)을 심평원 의료기관 정보로 더 세분해 확인.</li>
+</ul>
+</section>
+</main>
